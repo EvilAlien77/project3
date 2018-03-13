@@ -1,0 +1,129 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+/* ******************* */
+/* ******************* */
+body {
+  background: green; }
+
+/* *********                            head                            ********** */
+.head {
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding-left: 40px;
+  padding-right: 40px; }
+
+a {
+  text-decoration: none;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 1.04rem;
+  color: #000; }
+
+.phone {
+  max-width: 1rem;
+  padding-right: 10px; }
+
+.center {
+  font-size: 2.4rem; }
+
+.button {
+  color: #ff8820; }
+
+.right-side {
+  border: 3px solid #f2f3f8;
+  padding: 10px 30px; }
+
+.tel:hover {
+  transition: all 0.8s ease;
+  color: #ff8820; }
+
+.right-side:hover {
+  transition: all 0.8s ease;
+  background: #ff8820;
+  border-color: #ff8820; }
+  .right-side:hover .button {
+    color: #fff; }
+
+/* *********                            home                         ********** */
+.home {
+  height: 70px;
+  background: #f2f3f8;
+  position: sticky;
+  top: 0;
+  min-height: 2em;
+  margin: 0;
+  display: flex;
+  align-items: center; }
+
+/*Внешний вид меню*/
+.menu a {
+  background: #f2f3f8;
+  color: #000;
+  padding: 10px;
+  display: block; }
+
+.side {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box; }
+
+.dws_menu ul,
+.dws_menu ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.dws_menu > ul {
+  display: flex;
+  justify-content: space-around; }
+
+.dws_menu > ul li a {
+  color: #000;
+  display: block;
+  font-size: 0.8rem -4px;
+  padding: 15px 10px 15px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  background: #f2f3f8; }
+
+.dws_menu > ul li a:hover {
+  transition: all 0.3s ease;
+  color: #ff8820; }
+
+/*sub menu*/
+.dws_menu li ul {
+  position: absolute;
+  min-width: 150px;
+  border-top: 30px solid transparent;
+  opacity: 0;
+  top: 10em; }
+
+.dws_menu li:hover > ul {
+  opacity: 1;
+  z-index: 3;
+  top: 0;
+  margin-top: 50px;
+  transition: all 0.5s ease; }
+
+.dws_menu li > ul li a {
+  padding: 10px;
+  text-transform: none; }
+
+.dws_menu > ul li .a_fir {
+  color: #ff8820; }
+
+.dws_menu > ul li .a_far {
+  background: #fff; }
+
+.dws_menu li:hover > ul li .a_far:hover {
+  border-left: 10px solid transparent; }

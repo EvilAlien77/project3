@@ -6,8 +6,9 @@
 $grey: #f2f3f8;
 $white: #fff;
 $black: #000;
-$fz: 0.8rem;
+$darkgrey: #9b9b9b;
 $orange: #ff8820;
+$fz: 0.8rem;
 /* ******************* */
 body {
 	background: green;
@@ -137,4 +138,127 @@ a {
 }
 .dws_menu li:hover > ul li .a_far:hover {
 		border-left: 10px solid transparent;
+}
+
+
+/* *********                            Slider                        ********** */
+
+.slider {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	color: $white;
+}
+.slider .sl_1{
+	background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/services-01-480x659.jpg);
+  background-repeat: no-repeat; 
+  width: 33%;
+  height: 630px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sl_2{
+	background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/services-02-480x659.jpg);
+  background-repeat: no-repeat;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sl_3{
+	background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/services-03-480x659.jpg);
+  background-repeat: no-repeat;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sl_4{
+	background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/services-04-480x659.jpg);
+  background-repeat: no-repeat;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slider h1 {
+	font-size: $fz * 3;
+}
+.slider p {
+	padding-top: 10px;
+	font-size: $fz * 1.2;
+}
+.slider h5 {
+	color: $orange;
+	padding-top: 10px;
+	font-size: $fz * 1.5;
+}
+
+/* *********                            Content                        ********** */
+
+.content {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	background-color: $white;
+	height: 780px;
+}
+.content_left {
+	max-width: 50%;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content_right {
+	width: 50%;
+	background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/bg-02.png);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+}
+.content_img {
+	margin-left: 10%;
+	img {
+		max-width: 480px;
+		max-height: 560px;
+	}
+}
+.Week {
+	color: $orange;
+}
+.content_text {
+  margin-left: 30%;
+  max-width: 60%;
+	display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left;
+}
+.content h1{
+	font-size: $fz + 3;
+} 
+.content h5{
+	margin-top: 20px;
+	font-size: $fz + 0.3;
+} 
+.content p{
+	margin-top: 20px;
+	font-size: $fz + 0.15;
+}
+.text_1{
+	color: $darkgrey;
+} 
+.button2 {
+	border: 3px solid $orange;
+	padding: 15px 60px;
+    font-size: $fz + 0.5;
+    margin-top: 40px;
+}
+.button2:hover {
+	transition: all 0.8s ease;
+	background: $orange;
+	border-color: $orange;
+	color: $white;
 }

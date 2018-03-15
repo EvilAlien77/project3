@@ -127,3 +127,119 @@ a {
 
 .dws_menu li:hover > ul li .a_far:hover {
   border-left: 10px solid transparent; }
+
+/* *********                            Slider                        ********** */
+.slider {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: #fff; }
+
+.slider .sl_1 {
+  background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/services-01-480x659.jpg);
+  background-repeat: no-repeat;
+  width: 33%;
+  height: 630px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.sl_2 {
+  background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/services-02-480x659.jpg);
+  background-repeat: no-repeat;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.sl_3 {
+  background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/services-03-480x659.jpg);
+  background-repeat: no-repeat;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.sl_4 {
+  background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/services-04-480x659.jpg);
+  background-repeat: no-repeat;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.slider h1 {
+  font-size: 2.4rem; }
+
+.slider p {
+  padding-top: 10px;
+  font-size: 0.96rem; }
+
+.slider h5 {
+  color: #ff8820;
+  padding-top: 10px;
+  font-size: 1.2rem; }
+
+/* *********                            Content                        ********** */
+.content {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: #fff;
+  height: 780px; }
+
+.content_left {
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.content_right {
+  width: 50%;
+  background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/bg-02.png);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center; }
+
+.content_img {
+  margin-left: 10%; }
+  .content_img img {
+    max-width: 480px;
+    max-height: 560px; }
+
+.Week {
+  color: #ff8820; }
+
+.content_text {
+  margin-left: 30%;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left; }
+
+.content h1 {
+  font-size: 3.8rem; }
+
+.content h5 {
+  margin-top: 20px;
+  font-size: 1.1rem; }
+
+.content p {
+  margin-top: 20px;
+  font-size: 0.95rem; }
+
+.text_1 {
+  color: #9b9b9b; }
+
+.button2 {
+  border: 3px solid #ff8820;
+  padding: 15px 60px;
+  font-size: 1.3rem;
+  margin-top: 40px; }
+
+.button2:hover {
+  transition: all 0.8s ease;
+  background: #ff8820;
+  border-color: #ff8820;
+  color: #fff; }

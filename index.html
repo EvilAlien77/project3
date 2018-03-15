@@ -6,6 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  
 </head>
 <body>
 	<div class="wrapper">
@@ -42,7 +45,7 @@
     							<li><a href="#" class="a_far">Full-Width Grid Gallery</a></li>
     						</ul>
     					</li>
-    					<li><a href="#">СCONTACTS</a></li>
+    					<li><a href="#">СONTACTS</a></li>
     					<li class="pages"><a href="#">PAGES</a>
     						<div class="pages_menu">
     						</div>
@@ -52,24 +55,56 @@
     			</div>
 				</div>
 			</div>
-			<div id="slider">
-				<div id="slider_box">
-					<ul>
-						<li id="img__1"></li>
-						<li id="img__2"></li>
-						<li id="img__3"></li>
-						<li id="img__4"></li>
-					</ul>
+			<div class="slider">
+			    <div class="sl_1">
+			    	<h1>Dark Romantic</h1>
+			    	<p>FROM $50</p>
+			    	<h5>________</h5>
+			    </div>
+			    <div class="sl_2">
+			    	<h1>Soul Notes</h1>
+			    	<p>FROM $45</p>
+			    	<h5>________</h5>
+			    </div>
+			    <div class="sl_3">
+			    	<h1>Orange Mood</h1>
+			    	<p>FROM $35</p>
+			    	<h5>________</h5>
+			    </div>
+			    <div class="sl_4">
+			    	<h1>In The Spotlight</h1>
+			    	<p>FROM $40</p>
+			    	<h5>________</h5>
+			    </div>
+			</div>
+			<div class="content">
+				<div class="content_left">
+					<div class="content_text">
+						<h1>About Me</h1>
+					    <h5>My name is Brittany Pierce and I’m a professional fine artist based in Los Angeles, CA.</h5>
+					<p class="text_1">I take inspiration from the innovative styles of contemporary and urban art, such as graphic and graffiti illustrations. I am always open to new artistic challenges and collaborations. Feel free to contact me if you need a unique, one-of-a-kind artwork.</p>
+					<p><span class="Week">Weekdays:</span> 8.00-20.00   <span class="Week">Weekends:</span> 9.00-18.00</p>
+					<a href="#" class="button2"><span>book now</span></a>
+					</div>
 				</div>
-				<div id="nav_slider">
-					<div id="left_nav"></div>
-					<div id="right_nav"></div>
+				<div class="content_right">
+					<div class="content_img">
+						<img src="images/5.jpg" alt="">
+					</div>
 				</div>
 			</div>
     </div>
-        <script
-        src="https://ajax.googleapis.com/ajax
-        /libs/jquery/2.2.0/jquery.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+        setting-name: setting-value
+      });
+    });
+  </script>
         <script src="bundle.js"></script>
 </body>
 </html>

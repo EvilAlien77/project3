@@ -1,0 +1,83 @@
+/* *********                            home                         ********** */
+
+
+.home {
+	height: $fz + 3.375;
+	background: $grey;
+	position: sticky;
+    top: 0;
+    min-height: 2em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    z-index: 20;
+}
+
+ /*Внешний вид меню*/
+.menu a {
+ 	background: $grey;
+ 	color: $black;
+ 	padding: $fz - 0.375;
+ 	display: block;
+ }
+.side {
+	max-width: $fz * 50;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+	
+}
+.dws_menu ul,
+.dws_menu ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.dws_menu > ul{
+	display: flex;
+	justify-content: space-around;
+}
+.dws_menu > ul li a{
+	color: $black;
+	display: block;
+	font-size: $fz -4px;
+	padding: $fz $fz - 0.375 $fz $fz - 0.6875;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+	background: $grey;
+}
+.dws_menu > ul li a:hover {
+	transition: all 0.3s ease;
+    color: $orange;
+}
+/*sub menu*/
+.dws_menu li ul{
+	position: absolute;
+	min-width: $fz * 9.375;
+    border-top: 30px solid transparent;
+    opacity: 0;
+    top: 999em;
+}
+.dws_menu li:hover > ul{
+	opacity: 1;
+    z-index: 3;
+    top: 0;
+    margin-top: $fz + 2.125;
+    transition: all 0.2s ease;
+}
+.dws_menu li > ul li a{
+	padding: $fz - 0.375;
+	text-transform: none;
+}
+.dws_menu > ul li .a_fir {
+	color: $orange;
+}
+.dws_menu > ul li .a_far {
+	background: $white;
+}
+.dws_menu li:hover > ul li .a_far:hover {
+		border-left: $fz - 0.375 solid transparent;
+}

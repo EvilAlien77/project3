@@ -1,0 +1,43 @@
+/* *********                            head                            ********** */
+.head {
+	background: $white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: $fz + 5.25;
+	padding-left: $fz + 1.5;
+	padding-right: $fz + 1.5;
+}
+a {
+	text-decoration: none;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	font-size: $fz * 1.3;
+	color: $black;
+}
+.phone {
+	max-width: $fz + 0.2;
+	padding-right: $fz - 0.375;
+}
+.center {
+	font-size: $fz * 3;
+}
+.button {
+	color: $orange;
+}
+.right-side {
+	border: 3px solid $grey;
+	padding: $fz - 0.375 $fz + 0.875;
+}
+.tel:hover {
+	transition: all 0.8s ease;
+    color: $orange;
+}
+.right-side:hover {
+	transition: all 0.8s ease;
+	background: $orange;
+	border-color: $orange;
+	.button {
+	color: $white;
+   }
+}

@@ -1,0 +1,53 @@
+
+/* ```````````````````` */
+.slider {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	color: $white;
+}
+.slider .sl_1{
+	background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/services-01-480x659.jpg);
+  background-repeat: no-repeat; 
+  width: 33%;
+  height: $fz * 39.375;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sl_2{
+	background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/services-02-480x659.jpg);
+  background-repeat: no-repeat;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sl_3{
+	background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/services-03-480x659.jpg);
+  background-repeat: no-repeat;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sl_4{
+	background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/services-04-480x659.jpg);
+  background-repeat: no-repeat;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slider h1 {
+	font-size: $fz * 3;
+}
+.slider p {
+	padding-top: $fz - 0.375;
+	font-size: $fz * 1.2;
+}
+.slider h5 {
+	color: $orange;
+	padding-top: $fz - 0.375;
+	font-size: $fz * 1.5;
+}

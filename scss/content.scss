@@ -1,0 +1,76 @@
+/* *********                            Content                        ********** */
+
+.content {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	background-color: $white;
+	height: $fz * 48.75;
+}
+.content_left {
+	max-width: 50%;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content_right {
+	width: 50%;
+	background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/bg-02.png);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+}
+.content_img {
+	margin-left: 10%;
+}
+.Week {
+	color: $orange;
+}
+.content_text {
+  margin-left: 30%;
+  max-width: 60%;
+	display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left;
+}
+.content h1{
+	font-size: $fz + 3;
+} 
+.content h5{
+	margin-top: $fz + 0.25;
+	font-size: $fz + 0.3;
+} 
+.content p{
+	margin-top: $fz + 0.25;
+	font-size: $fz + 0.15;
+}
+.text_1{
+	color: $darkgrey;
+} 
+.button2 {
+	border: 3px solid $orange;
+	padding: $fz  $fz + 2.75;
+    font-size: $fz + 0.5;
+    margin-top: $fz + 1.5;
+}
+.button2:hover {
+	transition: all 0.8s ease;
+	background: $orange;
+	border-color: $orange;
+	color: $white;
+}
+/* .video {
+	position: absolute;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+video {
+	position: absolute;
+	display: block;
+	height: $fz * 28.75;
+	width: 100%;
+} */

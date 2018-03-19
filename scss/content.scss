@@ -23,6 +23,8 @@
 }
 .content_img {
 	margin-left: 10%;
+	max-height: 100%;
+	max-width: 100%;
 }
 .Week {
 	color: $orange;
@@ -61,16 +63,3 @@
 	border-color: $orange;
 	color: $white;
 }
-/* .video {
-	position: absolute;
-left: 0;
-width: 100%;
-height: 100%;
-overflow: hidden;
-}
-video {
-	position: absolute;
-	display: block;
-	height: $fz * 28.75;
-	width: 100%;
-} */

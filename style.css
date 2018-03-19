@@ -1,6 +1,7 @@
 @charset "UTF-8";
-/* ```````````````````` */
+/* ````````````````````````````````````        Slider           ``````````` */
 .slider {
+  width: 100%;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -54,6 +55,7 @@
 
 /* *********                            head                            ********** */
 .head {
+  width: 100%;
   background: #fff;
   display: flex;
   flex-direction: row;
@@ -98,6 +100,7 @@ a {
 
 /* *********                            home                         ********** */
 .home {
+  width: 100%;
   height: 4.2rem;
   background: #f2f3f8;
   position: sticky;
@@ -159,7 +162,7 @@ a {
   min-width: 9.375rem;
   border-top: 1.875rem solid transparent;
   opacity: 0;
-  top: 999em; }
+  top: 500em; }
 
 .dws_menu > ul li .li_span {
   display: none; }
@@ -169,18 +172,15 @@ a {
   z-index: 3;
   top: 0;
   margin-top: 3.125rem;
-  transition: all 0.2s ease; }
+  transition: all 0.4s ease; }
 
 .dws_menu li > ul li a {
   padding: 0.625rem;
   text-transform: none; }
 
-.dws_menu > ul li .a_fir {
-  color: #ff8820; }
-
 .dws_menu > ul li .a_far {
   background: #fff;
-  box-shadow: 0 0 0.625rem #000; }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
 
 .dws_menu li:hover > ul li .a_far:hover {
   border-left: 0.2rem solid transparent; }
@@ -188,7 +188,6 @@ a {
     display: inline-block; }
 
 .li_span1 {
-  font-size: 1.1rem;
   display: inline-block;
   -ms-transform: rotate(90deg);
   /* IE 9 */
@@ -203,6 +202,7 @@ a {
 
 /* *********                            Content                        ********** */
 .content {
+  width: 100%;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -264,6 +264,7 @@ a {
   border-color: #ff8820;
   color: #fff; }
 
+/* *********                            Video                       ********** */
 .is_overlay {
   position: relative;
   width: 100%;
@@ -283,13 +284,14 @@ a {
   width: auto;
   height: auto; }
 
+/* *********                            Shell                       ********** */
 .shell {
+  width: 100%;
   height: 43.4375rem;
   background: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */ }
+  align-items: center; }
 
 h1 {
   font-size: 3.8rem;
@@ -352,5 +354,4 @@ tr {
   padding: 0; }
 
 body {
-  background: grey;
   font-family: Lato; }

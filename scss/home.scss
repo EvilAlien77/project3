@@ -2,6 +2,7 @@
 
 
 .home {
+	width: 100%;
 	height: $fz + 3.2;
 	background: $grey;
 	position: sticky;
@@ -66,7 +67,7 @@
 	min-width: $fz * 9.375;
     border-top: $fz + 0.875 solid transparent;
     opacity: 0;
-    top: 999em;
+    top: 500em;
 }
 .dws_menu > ul li .li_span {
 	display: none;
@@ -76,19 +77,17 @@
     z-index: 3;
     top: 0;
     margin-top: $fz + 2.125;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
     
 }
 .dws_menu li > ul li a{
 	padding: $fz - 0.375;
 	text-transform: none;
 }
-.dws_menu > ul li .a_fir {
-	color: $orange;
-}
+
 .dws_menu > ul li .a_far {
 	background: $white;
-    box-shadow: 0 0  $fz * 0.625 $black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .dws_menu li:hover > ul li .a_far:hover {
 		border-left: $fz - 0.8 solid transparent;
@@ -97,7 +96,6 @@
 }
 }
 .li_span1 {
-	font-size: $fz + 0.1;
 	display: inline-block;
     -ms-transform:rotate(90deg); /* IE 9 */
     -moz-transform:rotate(90deg); /* Firefox */

@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Document</title>
+	<link rel="stylesheet" href="animate.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <title>Project3</title>
   
 </head>
 <body>
@@ -77,7 +78,7 @@
 			    	<h5>________</h5>
 			    </div>
 			</div>
-			<div class="content">
+			<div class="content wow zoomIn" data-wow-offset="300">
 				<div class="content_left">
 					<div class="content_text">
 						<h1>About Me</h1>
@@ -101,7 +102,7 @@
 			</div>
 			<div class="shell">
 				<h1>Prices</h1>
-				<div class="blocks">
+				<div class="blocks wow zoomIn" data-wow-offset="300">
 					<div class="block1">
 					<h2>PORTRAITS</h2>
 					<h5>________</h5>
@@ -175,6 +176,10 @@
         setting-name: setting-value
       });
     });
+  </script>
+  <script src="wow.min.js"></script>
+  <script>
+  	new WOW().init();
   </script>
         <script src="bundle.js"></script>
 </body>

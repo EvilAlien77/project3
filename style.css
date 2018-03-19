@@ -49,7 +49,8 @@
 .slider h5 {
   color: #ff8820;
   padding-top: 0.625rem;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-family: arial; }
 
 /* *********                            head                            ********** */
 .head {
@@ -58,25 +59,27 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 6.25rem;
+  height: 6.5rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem; }
 
 a {
   text-decoration: none;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #000; }
 
 .phone {
   max-width: 1.2rem;
   padding-right: 0.625rem; }
 
-.center {
-  font-size: 3rem; }
-
+/* .center {
+	font-size: $fz * 3;
+} */
 .button {
-  color: #ff8820; }
+  color: #ff8820;
+  letter-spacing: 0.05rem;
+  font-weight: 900;
+  font-size: 1.2rem; }
 
 .right-side {
   border: 3px solid #f2f3f8;
@@ -95,7 +98,7 @@ a {
 
 /* *********                            home                         ********** */
 .home {
-  height: 4.375rem;
+  height: 4.2rem;
   background: #f2f3f8;
   position: sticky;
   top: 0;
@@ -113,12 +116,15 @@ a {
   display: block; }
 
 .side {
-  max-width: 50rem;
+  width: 50rem;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   box-sizing: border-box; }
+
+.dws_menu {
+  width: 50rem; }
 
 .dws_menu ul,
 .dws_menu ol {
@@ -133,24 +139,30 @@ a {
 .dws_menu > ul li a {
   color: #000;
   display: block;
-  font-size: 1rem -4px;
+  font-size: 0.85rem;
   padding: 1rem 0.625rem 1rem 0.3125rem;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3s ease;
-  background: #f2f3f8; }
+  background: #f2f3f8;
+  letter-spacing: 0.05rem; }
 
 .dws_menu > ul li a:hover {
   transition: all 0.3s ease;
   color: #ff8820; }
+  .dws_menu > ul li a:hover .li_span1 {
+    color: #ff8820; }
 
 /*sub menu*/
 .dws_menu li ul {
   position: absolute;
   min-width: 9.375rem;
-  border-top: 30px solid transparent;
+  border-top: 1.875rem solid transparent;
   opacity: 0;
   top: 999em; }
+
+.dws_menu > ul li .li_span {
+  display: none; }
 
 .dws_menu li:hover > ul {
   opacity: 1;
@@ -167,10 +179,27 @@ a {
   color: #ff8820; }
 
 .dws_menu > ul li .a_far {
-  background: #fff; }
+  background: #fff;
+  box-shadow: 0 0 0.625rem #000; }
 
 .dws_menu li:hover > ul li .a_far:hover {
-  border-left: 0.625rem solid transparent; }
+  border-left: 0.2rem solid transparent; }
+  .dws_menu li:hover > ul li .a_far:hover .li_span {
+    display: inline-block; }
+
+.li_span1 {
+  font-size: 1.1rem;
+  display: inline-block;
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -moz-transform: rotate(90deg);
+  /* Firefox */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(90deg);
+  /* Opera */
+  transform: rotate(90deg);
+  color: #9b9b9b; }
 
 /* *********                            Content                        ********** */
 .content {
@@ -265,11 +294,74 @@ video {
   width: auto;
   height: auto; }
 
+.shell {
+  height: 43.4375rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */ }
+
+h1 {
+  font-size: 3.8rem;
+  font-weight: 900;
+  padding-top: 6.25rem; }
+
+.blocks {
+  display: flex;
+  flex-direction: row;
+  width: 73.125rem;
+  justify-content: space-between;
+  padding-top: 2.5rem; }
+  .blocks h2 {
+    color: #ff8820; }
+  .blocks h5 {
+    font-family: arrial;
+    color: #f2f3f8;
+    font-size: 1.5rem; }
+
+.blocks .block1, .block2, .block3 {
+  border: solid 0.2rem #f2f3f8;
+  width: 31%;
+  height: 23.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.tables {
+  padding-top: 1.2rem;
+  min-width: 80%; }
+
+table {
+  width: 100%; }
+
+td {
+  padding-top: 2rem;
+  font-size: 1.4rem; }
+
+tr {
+  display: flex;
+  justify-content: space-between; }
+
+.blocks > div:hover {
+  color: #fff;
+  background: #ff8820;
+  border-color: #ff8820;
+  transition: all 0.5s ease; }
+  .blocks > div:hover h2 {
+    color: #fff; }
+  .blocks > div:hover h5 {
+    color: #fff; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css?family=Lato"); }
+
 * {
   margin: 0;
   padding: 0; }
 
-/* ******************* */
-/* ******************* */
 body {
-  background: grey; }
+  background: grey;
+  font-family: Lato; }

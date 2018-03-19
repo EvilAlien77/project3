@@ -1,0 +1,65 @@
+.shell {
+	height: $fz * 43.4375;
+	background: $white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: center; */
+}
+h1 {
+	font-size: $fz +2.8;
+	font-weight: 900;
+	padding-top: $fz * 6.25;
+}
+.blocks {
+	display: flex;
+	flex-direction: row;
+	width: $fz * 73.125;
+	justify-content: space-between;
+	padding-top: $fz * 2.5;
+	h2{
+	color: $orange;
+  }
+  h5{
+	font-family: arrial;
+	color: $grey;
+	font-size: $fz * 1.5;
+  }
+}
+.blocks .block1 ,.block2 ,.block3 {
+	border: solid $fz - 0.8 $grey;
+	width: 31%;
+	height: $fz * 23.7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.tables {
+	padding-top: $fz + 0.2;
+	min-width: 80%;
+	
+}
+table {
+	width: 100%;
+}
+td{
+	padding-top: $fz + 1;
+    font-size: $fz + 0.4;
+}
+tr {
+	display: flex;
+	justify-content: space-between;
+}
+.blocks > div:hover {
+	color: $white;
+	background: $orange;
+	border-color: $orange;
+	h2{
+	color: $white;
+  }
+  h5{
+	color: $white;
+  }
+	transition: all 0.5s ease;
+}

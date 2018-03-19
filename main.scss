@@ -4,16 +4,20 @@
 @import"scss/home.scss";
 @import"scss/content.scss";
 @import"scss/video.scss";
+@import"scss/shell.scss";
 
+@font-face {
+    font-family: "Lato";
+    src : url('https://fonts.googleapis.com/css?family=Lato');
+}
 
 *{
 	margin: 0;
 	padding: 0;
 }
-/* ******************* */
 
-/* ******************* */
 body {
 	background: grey;
+	font-family: Lato;
 }
 

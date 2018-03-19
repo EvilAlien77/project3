@@ -2,7 +2,7 @@
 
 
 .home {
-	height: $fz + 3.375;
+	height: $fz + 3.2;
 	background: $grey;
 	position: sticky;
     top: 0;
@@ -21,13 +21,16 @@
  	display: block;
  }
 .side {
-	max-width: $fz * 50;
+	width: $fz * 50;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	box-sizing: border-box;
 	
+}
+.dws_menu {
+	width: $fz * 50;
 }
 .dws_menu ul,
 .dws_menu ol{
@@ -42,24 +45,31 @@
 .dws_menu > ul li a{
 	color: $black;
 	display: block;
-	font-size: $fz -4px;
+	font-size: $fz - 0.15;
 	padding: $fz $fz - 0.375 $fz $fz - 0.6875;
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: all 0.3s ease;
 	background: $grey;
+	letter-spacing: $fz - 0.95;
 }
 .dws_menu > ul li a:hover {
 	transition: all 0.3s ease;
     color: $orange;
+    .li_span1 {
+	color: $orange;
+}
 }
 /*sub menu*/
 .dws_menu li ul{
 	position: absolute;
 	min-width: $fz * 9.375;
-    border-top: 30px solid transparent;
+    border-top: $fz + 0.875 solid transparent;
     opacity: 0;
     top: 999em;
+}
+.dws_menu > ul li .li_span {
+	display: none;
 }
 .dws_menu li:hover > ul{
 	opacity: 1;
@@ -67,6 +77,7 @@
     top: 0;
     margin-top: $fz + 2.125;
     transition: all 0.2s ease;
+    
 }
 .dws_menu li > ul li a{
 	padding: $fz - 0.375;
@@ -77,7 +88,22 @@
 }
 .dws_menu > ul li .a_far {
 	background: $white;
+    box-shadow: 0 0  $fz * 0.625 $black;
 }
 .dws_menu li:hover > ul li .a_far:hover {
-		border-left: $fz - 0.375 solid transparent;
+		border-left: $fz - 0.8 solid transparent;
+		.li_span {
+	display: inline-block;
 }
+}
+.li_span1 {
+	font-size: $fz + 0.1;
+	display: inline-block;
+    -ms-transform:rotate(90deg); /* IE 9 */
+    -moz-transform:rotate(90deg); /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari and Chrome */
+    -o-transform:rotate(90deg); /* Opera */
+    transform:rotate(90deg);
+	color: $darkgrey;
+}
+

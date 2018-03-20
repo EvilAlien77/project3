@@ -54,15 +54,16 @@
   font-family: arial; }
 
 .slider > div {
-  z-index: 2; }
+  z-index: 2;
+  overflow: hidden; }
 
 .slider > div:hover {
   overflow: hidden;
-  transform: scale(1.2);
+  transform: scale(1.05);
   z-index: 1;
-  transition: all 1s ease; }
+  transition: all 2s ease; }
   .slider > div:hover h1 {
-    transform: scale(1); }
+    transform: none; }
 
 /* *********                            head                            ********** */
 .head {
@@ -247,11 +248,17 @@ a {
   text-align: left; }
 
 .content h1 {
-  font-size: 4rem; }
+  font-weight: 900;
+  letter-spacing: .025em;
+  word-spacing: .1em;
+  font-size: 4rem;
+  font-family: "Poppins" , Helvetica, Arial, sans-serif; }
 
 .content h5 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   margin-top: 1.25rem;
-  font-size: 1.3rem; }
+  font-size: 1.0625rem;
+  font-weight: normal; }
 
 .content p {
   margin-top: 1.25rem;
@@ -414,7 +421,7 @@ tr {
 .gallery_block1 > ul li:hover {
   z-index: 1; }
   .gallery_block1 > ul li:hover img {
-    transition: all 1s ease;
+    transition: all 2s ease;
     transform: scale(1.2);
     z-index: 1; }
 
@@ -429,6 +436,10 @@ li img {
 @font-face {
   font-family: "Lato";
   src: url("https://fonts.googleapis.com/css?family=Lato"); }
+
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css?family=Poppins"); }
 
 * {
   margin: 0;

@@ -6,6 +6,7 @@
 	text-align: center;
 	background-color: $white;
 	height: $fz * 48.75;
+	
 }
 .content_left {
 	max-width: 50%;
@@ -38,11 +39,17 @@
   text-align: left;
 }
 .content h1{
+	font-weight: 900;
+    letter-spacing: .025em;
+    word-spacing: .1em;
 	font-size: $fz + 3;
+	font-family: "Poppins" , Helvetica, Arial, sans-serif;
 } 
 .content h5{
+	font-family: "Lato", Helvetica, Arial, sans-serif;
 	margin-top: $fz + 0.25;
-	font-size: $fz + 0.3;
+	font-size: $fz * 1.0625;
+	font-weight: normal;
 } 
 .content p{
 	margin-top: $fz + 0.25;

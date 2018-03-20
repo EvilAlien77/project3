@@ -9,24 +9,30 @@
 	height: $fz * 28.125;
 	padding-top: $fz * 3.75;
 }
-.gallery_1{
-	background-image: url(https://scontent.cdninstagram.com/vp/b3432ce03451a4fc6b58d42fd62be4b5/5B31B44E/t51.2885-15/s640x640/sh0.08/e35/25008602_1857513164560938_4871191868051816448_n.jpg);
-  background-repeat: no-repeat; 
+.gallery_block1 ul {
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+}
+.gallery_block1 > ul .gallery_1{
+	/* background-image: url(https://scontent.cdninstagram.com/vp/b3432ce03451a4fc6b58d42fd62be4b5/5B31B44E/t51.2885-15/s640x640/sh0.08/e35/25008602_1857513164560938_4871191868051816448_n.jpg);
+	   background-repeat: no-repeat; */ 
   width: 33%;
+  height: 100%;
 }
 .gallery_2{
-	background-image: url(https://scontent.cdninstagram.com/vp/f7d0a69f2b9d504a3be44b22d5caa747/5B2E7622/t51.2885-15/s640x640/sh0.08/e35/24846024_162608731022994_1340450527053348864_n.jpg);
-  background-repeat: no-repeat; 
+	/* background-image: url(https://scontent.cdninstagram.com/vp/f7d0a69f2b9d504a3be44b22d5caa747/5B2E7622/t51.2885-15/s640x640/sh0.08/e35/24846024_162608731022994_1340450527053348864_n.jpg);
+	   background-repeat: no-repeat; */ 
   width: 33%;
 }
 .gallery_3{
-	background-image: url(https://scontent.cdninstagram.com/vp/b2577ca46f6da3bbadde00cd068d27b4/5B36E91F/t51.2885-15/s640x640/sh0.08/e35/25009007_317889788709479_2775404357686919168_n.jpg);
-  background-repeat: no-repeat; 
+	/* background-image: url(https://scontent.cdninstagram.com/vp/b2577ca46f6da3bbadde00cd068d27b4/5B36E91F/t51.2885-15/s640x640/sh0.08/e35/25009007_317889788709479_2775404357686919168_n.jpg);
+	   background-repeat: no-repeat; */ 
   width: 33%;
 }
 .gallery_4{
-	background-image: url(https://scontent.cdninstagram.com/vp/af12ae7f3f15a5acb2a218f307860510/5B40FE66/t51.2885-15/s640x640/sh0.08/e35/25011014_1804355229856926_1272750654078582784_n.jpg);
-  background-repeat: no-repeat; 
+	/* background-image: url(https://scontent.cdninstagram.com/vp/af12ae7f3f15a5acb2a218f307860510/5B40FE66/t51.2885-15/s640x640/sh0.08/e35/25011014_1804355229856926_1272750654078582784_n.jpg);
+	   background-repeat: no-repeat; */ 
   width: 33%;
 }
 .gallery_block2 {
@@ -38,4 +44,25 @@
 		color: $orange;
 		font-size: $fz - 0.2;
 	}
+}	
+.gallery_block1 > ul li {
+	list-style: none;
+	z-index: 2;
+}
+.gallery_block1 > ul li:hover{
+   
+   z-index: 1;
+   img {
+   transition: all 1s ease;	
+   transform: scale(1.2);
+   z-index: 1;
+   }
+}
+li img {
+	width: 100%;
+	height: 100%;
+}
+.conteiner {
+	overflow: visible;
+	z-index: 3;
 }

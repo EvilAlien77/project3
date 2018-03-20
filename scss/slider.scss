@@ -5,6 +5,8 @@
 	flex-direction: row;
 	text-align: center;
 	color: $white;
+  
+  overflow: hidden;
 }
 .slider .sl_1{
 	background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/services-01-480x659.jpg);
@@ -52,3 +54,13 @@
 	font-size: $fz * 1.5;
   font-family: arial;
 }
+.slider > div {
+  z-index: 2;
+}
+.slider > div:hover {
+    overflow: hidden;
+   transform: scale(1.2);
+   z-index: 1;
+   transition: all 1s ease;
+   h1{transform: scale(1);}
+  }

@@ -5,42 +5,10 @@
   flex-direction: row;
   text-align: center;
   color: #fff;
+  height: 39.375rem;
   overflow: hidden; }
 
-.slider .sl_1 {
-  background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/services-01-480x659.jpg);
-  background-repeat: no-repeat;
-  width: 33%;
-  height: 39.375rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.sl_2 {
-  background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/services-02-480x659.jpg);
-  background-repeat: no-repeat;
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.sl_3 {
-  background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/services-03-480x659.jpg);
-  background-repeat: no-repeat;
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.sl_4 {
-  background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/services-04-480x659.jpg);
-  background-repeat: no-repeat;
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.slider h1 {
+.text h1 {
   font-size: 3rem; }
 
 .slider p {
@@ -54,16 +22,24 @@
   font-family: arial; }
 
 .slider > div {
-  z-index: 2;
   overflow: hidden; }
 
-.slider > div:hover {
-  overflow: hidden;
-  transform: scale(1.05);
-  z-index: 1;
+.slider img {
   transition: all 2s ease; }
-  .slider > div:hover h1 {
-    transform: none; }
+
+.slider > div:hover img {
+  transform: scale(1.2); }
+
+.slider_content {
+  position: relative; }
+  .slider_content .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); }
+  .slider_content:hover .test {
+    opacity: 1; }
 
 /* *********                            head                            ********** */
 .head {
@@ -171,18 +147,18 @@ a {
   position: absolute;
   min-width: 9.375rem;
   border-top: 1.875rem solid transparent;
-  opacity: 0;
-  top: 500em; }
+  display: none; }
 
 .dws_menu > ul li .li_span {
   display: none; }
 
-.dws_menu li:hover > ul {
-  opacity: 1;
+.pod_menu:hover > .sub_menu {
   z-index: 3;
   top: 0;
   margin-top: 3.125rem;
-  transition: all 0.4s ease; }
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column; }
 
 .dws_menu li > ul li a {
   padding: 0.625rem;
@@ -279,34 +255,9 @@ a {
   border-color: #ff8820;
   color: #fff; }
 
-/* *********                            Video                       ********** */
-.trailer {
-  background-color: #000; }
-
-.videofront {
-  display: block;
-  /* Устанавливаем */
-  width: 100%;
-  /* Ширина и высота картинки */
-  height: 28.75rem;
-  background: url(https://kanc-kiev.com.ua/image/catalog/%D0%9A%D0%B8%D1%81%D1%82%D0%B8%20%D0%B1%D0%B5%D0%BB%D0%B8%D1%87%D0%B8,%20%D0%BA%D0%BE%D0%BB%D0%BD%D0%BA%D0%BE%D0%B2%D1%8B%D0%B5,%20%D1%81%D0%B8%D0%BD%D1%82%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%2012.jpg) no-repeat;
-  /* Заливаем блок статичной картинкой */
-  background-size: 100%; }
-
-/* Как видно, начальное (статическое) изображение задано как фон блока с шириной и высотой этого изображения. */
-a.videofront video {
-  visibility: hidden;
-  /* Aнимация не была видна в ситуации, когда мышь не наведена */ }
-
-a.videofront:hover {
-  background: none;
-  /* Фон (статичное изображение) не было видно при наведении мыши */ }
-
-a.videofront:hover video {
-  visibility: visible;
-  /* При наведении анимация показывается */
-  border: 0;
-  /* без обрамления 😉 */ }
+video {
+  object-fit: fill;
+  height: 28.75rem; }
 
 /* *********                            Shell                       ********** */
 .shell {
@@ -379,31 +330,11 @@ tr {
   height: 28.125rem;
   padding-top: 3.75rem; }
 
-.gallery_block1 ul {
+.gallery_block {
   display: flex;
-  width: 100%;
-  overflow: hidden; }
-
-.gallery_block1 > ul .gallery_1 {
-  /* background-image: url(https://scontent.cdninstagram.com/vp/b3432ce03451a4fc6b58d42fd62be4b5/5B31B44E/t51.2885-15/s640x640/sh0.08/e35/25008602_1857513164560938_4871191868051816448_n.jpg);
-	   background-repeat: no-repeat; */
   width: 33%;
-  height: 100%; }
-
-.gallery_2 {
-  /* background-image: url(https://scontent.cdninstagram.com/vp/f7d0a69f2b9d504a3be44b22d5caa747/5B2E7622/t51.2885-15/s640x640/sh0.08/e35/24846024_162608731022994_1340450527053348864_n.jpg);
-	   background-repeat: no-repeat; */
-  width: 33%; }
-
-.gallery_3 {
-  /* background-image: url(https://scontent.cdninstagram.com/vp/b2577ca46f6da3bbadde00cd068d27b4/5B36E91F/t51.2885-15/s640x640/sh0.08/e35/25009007_317889788709479_2775404357686919168_n.jpg);
-	   background-repeat: no-repeat; */
-  width: 33%; }
-
-.gallery_4 {
-  /* background-image: url(https://scontent.cdninstagram.com/vp/af12ae7f3f15a5acb2a218f307860510/5B40FE66/t51.2885-15/s640x640/sh0.08/e35/25011014_1804355229856926_1272750654078582784_n.jpg);
-	   background-repeat: no-repeat; */
-  width: 33%; }
+  height: 100%;
+  overflow: hidden; }
 
 .gallery_block2 {
   text-align: center;
@@ -414,28 +345,47 @@ tr {
     color: #ff8820;
     font-size: 0.8rem; }
 
-.gallery_block1 > ul li {
-  list-style: none;
-  z-index: 2; }
-
-.gallery_block1 > ul li:hover {
-  z-index: 1; }
-  .gallery_block1 > ul li:hover img {
-    transition: all 2s ease;
-    transform: scale(1.2);
-    z-index: 1; }
-
-li img {
+.gallery_block img {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  transition: all 2s ease; }
 
 .conteiner {
-  overflow: visible;
-  z-index: 3; }
+  position: relative; }
+  .conteiner .test {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: all 2s ease; }
+    .conteiner .test span {
+      color: #fff;
+      font-size: 0.8rem; }
+    .conteiner .test i {
+      color: #fff; }
+  .conteiner:hover .test {
+    opacity: 1; }
+  .conteiner:hover img {
+    transform: scale(1.2); }
+
+.container {
+  display: flex; }
+  .container-element {
+    width: 500px; }
+    .container-element--text {
+      color: red; }
+      .container-element--text:hover {
+        color: green; }
 
 @font-face {
   font-family: "Lato";
-  src: url("https://fonts.googleapis.com/css?family=Lato"); }
+  src: url(fonts/Poppins-Bold2f55e0d4b3f9eb3ffaefdac379fa3f8b.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Lato";
+  src: url(fonts/Poppins-Regulare212f84086965da44a6c84f3d9a683a4.ttf) format("truetype"); }
 
 @font-face {
   font-family: "Poppins";

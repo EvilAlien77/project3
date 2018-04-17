@@ -6,8 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="animate.css">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick.css">
+  		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">	
     <title>Project3</title>
   
 </head>
@@ -33,14 +34,24 @@
     				<ul>
     					<li><a href="#" class="a_fir">HOME</a></li>
     					<li><a href="#">ABOUT ME</a></li>
-    					<li><a href="#">SERVICES <span class="li_span1">></span></a>
-    						<ul>
-    							<li><a href="#" class="a_far"><span class="li_span">></span> Services</a></li>
-    							<li><a href="#" class="a_far"><span class="li_span">></span> Single Service</a></li>
+    					<li class="pod_menu">
+    						<a href="#">SERVICES 
+    							<span class="li_span1">></span>
+    						</a>
+    						<ul class="sub_menu">
+    							<li>
+    								<a href="#" class="a_far">
+    								<span class="li_span">></span> Services</a>
+    							</li>
+    							<li>
+    								<a href="#" class="a_far">
+    									<span class="li_span">></span> Single Service
+    								</a>
+    							</li>
     						</ul>
     					</li>
-    					<li><a href="#">GALLERY <span class="li_span1">></span></a>
-    						<ul>
+    					<li class="pod_menu"><a href="#">GALLERY <span class="li_span1">></span></a>
+    						<ul class="sub_menu">
     							<li><a href="#" class="a_far"><span class="li_span">></span> Grid Gallery</a></li>
     							<li><a href="#" class="a_far"><span class="li_span">></span> Masonry Gallery</a></li>
     							<li><a href="#" class="a_far"><span class="li_span">></span> Full-Width Grid Gallery</a></li>
@@ -58,24 +69,44 @@
 			</div>
 			<div class="slider">
 			    <div class="sl_1">
-			    	<h1>Dark Romantic</h1>
-			    	<p>FROM $50</p>
-			    	<h5>________</h5>
+			    	<div class="slider_content">
+							<img src="images/1.jpg" alt="">
+						<div class="text">
+							<h1>Dark Romantic</h1>
+					    	<p>FROM $50</p>
+					    	<h5>________</h5>
+						</div>
+					</div>
 			    </div>
 			    <div class="sl_2">
-			    	<h1>Soul Notes</h1>
-			    	<p>FROM $45</p>
-			    	<h5>________</h5>
+			    	<div class="slider_content">
+							<img src="images/2.jpg" alt="">
+						<div class="text">
+							<h1>Soul Notes</h1>
+					    	<p>FROM $45</p>
+					    	<h5>________</h5>
+						</div>
+					</div>
 			    </div>
 			    <div class="sl_3">
-			    	<h1>Orange Mood</h1>
-			    	<p>FROM $35</p>
-			    	<h5>________</h5>
+			    	<div class="slider_content">
+							<img src="images/3.jpg" alt="">
+						<div class="text">
+							<h1>Orange Mood</h1>
+					    	<p>FROM $35</p>
+					    	<h5>________</h5>
+						</div>
+					</div>
 			    </div>
 			    <div class="sl_4">
-			    	<h1>In The Spotlight</h1>
-			    	<p>FROM $40</p>
-			    	<h5>________</h5>
+			    	<div class="slider_content">
+							<img src="images/4.jpg" alt="">
+						<div class="text">
+							<h1>In The Spotlight</h1>
+					    	<p>FROM $40</p>
+					    	<h5>________</h5>
+						</div>
+					</div>
 			    </div>
 			</div>
 			<div class="content wow zoomIn" data-wow-offset="300" data-wow-duration="2s">
@@ -94,10 +125,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="trailer">
-				<a class="videofront">
-       <video src="images/video.mp4" loop="on" autoplay="on" height="100%" width="100%"/></a>
-				
+			<div class="videoContainer7">
+		
+       				<video src="images/video.mp4" loop="on" autoplay="on"  width="100%"/>
+       			
 			</div>
 			<div class="shell">
 				<h1>Prices</h1>
@@ -166,39 +197,71 @@
 			</div>
 			<div class="gallery">
 				<div class="gallery_block1">
-					<ul>
-						<li class="gallery_1"><img src="images/6.jpg" alt=""><div class="conteiner">sdgds
-							dsfhdh
-							fdshdfh
-							dfhdh
-							sdgsg
-							sdgsdg
-							sdgsg
-					</div></li>
-						<li class="gallery_2"><img src="images/7.jpg" alt=""><div class="conteiner">
-					</div></li>
-						<li class="gallery_3"><img src="images/8.jpg" alt=""><div class="conteiner">
-					</div></li>
-						<li class="gallery_4"><img src="images/9.jpg" alt=""><div class="conteiner">
-					</div></li>
-					</ul>
+						<div class="gallery_block">
+					
+							<div class="conteiner">
+								<img src="images/6.jpg" alt="">
+								<div class="test">
+									<i class="fa fa-address-book-o" aria-hidden="true"></i>
+									<span>0</span>
+									<i class="fa fa-eye" aria-hidden="true""></i>
+									<span>0</span>
+								</div>
+							</div>
+
+						</div>
+						<div class="gallery_block">
+							<div class="conteiner">
+								<img src="images/7.jpg" alt="">
+								<div class="test1">
+									<div class="test">
+										<i class="fa fa-address-book-o" aria-hidden="true"></i>
+										<span>0</span>
+										<i class="fa fa-eye" aria-hidden="true""></i>
+										<span>0</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="gallery_block">
+							<div class="conteiner">
+								<img src="images/8.jpg" alt="">
+								<div class="test">
+									<i class="fa fa-address-book-o" aria-hidden="true"></i>
+									<span>0</span>
+									<i class="fa fa-eye" aria-hidden="true""></i>
+									<span>0</span>
+								</div>
+							</div>
+						</div>
+						<div class="gallery_block">
+							<div class="conteiner">
+								<img src="images/9.jpg" alt="">
+								<div class="test">
+									<i class="fa fa-address-book-o" aria-hidden="true"></i>
+									<span>0</span>
+									<i class="fa fa-eye" aria-hidden="true""></i>
+									<span>0</span>
+								</div>
+							</div>
+						</div>
 				</div>
 				<div class="gallery_block2">
 					<span>FOLLOW ME</span>
 					<a href="#">@ INSTAGRAM</a>
 				</div>
 			</div>
+          <div class="sl">
+				<div class="sl_slide">1</div>
+				<div class="sl_slide">2</div>
+				<div class="sl_slide">3</div>
+		  </div>
     </div>
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+  	<script src="slick/slick.min.js"></script>
+  	<script src="js.js"></script>
   <script type="text/javascript">
-    $(document).ready(function(){
-      $('.slider').slick({
-        setting-name: setting-value
-      });
-    });
+ 
   </script>
   <script src="wow.min.js"></script>
   <script>

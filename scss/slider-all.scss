@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+
+  &-element{
+    width: 500px;
+
+    &--text{
+      color:red;
+
+      &:hover{
+        color:green;
+      }
+    }
+  }
+}

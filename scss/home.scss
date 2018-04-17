@@ -61,23 +61,26 @@
 }
 }
 /*sub menu*/
+
 .dws_menu li ul{
 	position: absolute;
 	min-width: $fz * 9.375;
     border-top: $fz + 0.875 solid transparent;
-    opacity: 0;
-    top: 500em;
+    display: none;
+    //top: 10em;
 }
 .dws_menu > ul li .li_span {
 	display: none;
 }
-.dws_menu li:hover > ul{
-	opacity: 1;
+.pod_menu:hover > .sub_menu{
+
     z-index: 3;
     top: 0;
     margin-top: $fz + 2.125;
-    transition: all 0.4s ease;
-    
+    transition: all 0.5s ease;
+    display: flex;
+	flex-direction: column;
+
 }
 .dws_menu li > ul li a{
 	padding: $fz - 0.375;
@@ -92,7 +95,7 @@
 		border-left: $fz - 0.8 solid transparent;
 		.li_span {
 	display: inline-block;
-}
+   }
 }
 .li_span1 {
 	display: inline-block;

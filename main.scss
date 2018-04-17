@@ -1,4 +1,4 @@
-@import"scss/Variables.scss";
+@import"scss/variables.scss";
 @import"scss/slider.scss";
 @import"scss/head.scss";
 @import"scss/home.scss";
@@ -6,10 +6,16 @@
 @import"scss/video.scss";
 @import"scss/shell.scss";
 @import"scss/gallery.scss";
+@import"scss/slider-all.scss";
 
 @font-face {
     font-family: "Lato";
-    src : url('https://fonts.googleapis.com/css?family=Lato');
+    src : url('fonts/poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Lato";
+    src : url('fonts/poppins/Poppins-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: "Poppins";

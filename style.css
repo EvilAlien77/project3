@@ -366,7 +366,11 @@ tr {
     .conteiner .test i {
       color: #fff; }
   .conteiner:hover .test {
-    opacity: 1; }
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 100%; }
   .conteiner:hover img {
     transform: scale(1.2); }
 

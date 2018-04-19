@@ -53,8 +53,11 @@
 	}
 	 &:hover{
 	 	.test{
+			display: flex;
+			flex-direction: row;
    		 	opacity: 1;
-
+			background: rgba(0,0,0, 0.4);
+			padding: 100%;
    		 }
    		 img {
            transform: scale(1.2);

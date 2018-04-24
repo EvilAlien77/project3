@@ -23,9 +23,14 @@
 
 }
 .content_img {
-	margin-left: 10%;
+	/*margin-left: 10%;
 	max-height: 100%;
-	max-width: 100%;
+	max-width: 100%;*/
+	img {
+		height: 100%;
+		width: 100%;
+	}
+
 }
 .Week {
 	color: $orange;

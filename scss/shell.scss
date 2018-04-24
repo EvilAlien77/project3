@@ -1,5 +1,6 @@
 /* *********                            Shell                       ********** */
 .shell {
+	width: 100%;
 	height: $fz * 43.4375;
 	background: $white;
 	display: flex;
@@ -14,8 +15,8 @@ h1 {
 .blocks {
 	display: flex;
 	flex-direction: row;
-	width: $fz * 73.125;
 	justify-content: space-between;
+	width: 65%;
 	padding-top: $fz * 2.5;
 	h2{
 	color: $orange;
@@ -28,7 +29,7 @@ h1 {
 }
 .blocks .block1 ,.block2 ,.block3 {
 	border: solid $fz - 0.8 $grey;
-	width: 31%;
+	width: 30%;
 	height: $fz * 23.7;
 	display: flex;
 	flex-direction: column;

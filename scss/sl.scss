@@ -1,0 +1,87 @@
+
+.section {
+  margin: 0 auto;
+  background: $white;
+  background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/bg-02.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding-top: $fz * 5.9375;
+  padding-bottom: $fz * 6.875;
+    h2 {
+      line-height: 0.93333;
+      font-size: $fz * 3.75;
+    }
+  .sl {
+    margin: $fz * 1.875;
+    .sl_slide {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: $fz * 148.125;
+      padding-left: $fz * 0.9375;
+      padding-right: $fz * 0.9375;
+      .sl_slide_1 {
+        width: $fz * 34.6875;
+
+        .quote-box {
+          height: $fz * 14.6875;
+          background-color: $white;
+          padding: $fz * 3.75 $fz * 1.875 $fz * 4.0625 $fz * 4.0625;
+          margin-right: $fz * 1.875;
+          box-shadow: 0 1px 16px rgba(0, 0, 0, 0.21);
+          text-align: left;
+          .quote-box-header {
+            .img-circle {
+              border-radius: 50%;
+            }
+            display: flex;
+            align-items: center;
+            .quote-box-title {
+              margin-left: $fz * 2.1875;
+              font-size: $fz * 1.5;
+              line-height: $fz * 2.0625;
+              font-family: "Poppins", Helvetica, Arial, sans-serif;
+              font-weight: 700;
+              letter-spacing: .05em;
+            }
+          }
+          .quote-box-body {
+            q {
+              margin-top: $fz * 1.25;
+              color: $darkgrey;
+            }
+          }
+          .quote-box-footer {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            p {
+              color: $darkgrey;
+              font-family: arial;
+            }
+            .quote-box-cite {
+              cite {
+                color: $orange;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-family: "Lato", Helvetica, Arial, sans-serif;
+              }
+              span {
+                font-style: italic;
+                font-size: $fz;
+                color: $black;
+                padding-left: $fz * 0.4375;
+                line-height: .8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+

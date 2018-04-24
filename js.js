@@ -1,5 +1,5 @@
 $('.sl').slick({
-	autoplay: true,
+	autoplay: false,
 	autoplaySpeed: 4000,
 	speed:1000,
 	arrows: false,

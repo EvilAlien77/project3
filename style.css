@@ -538,6 +538,12 @@ tr {
 
 .footer_touch {
   width: 41.66667%; }
+  .footer_touch .form-header i {
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    background-color: #4d4d4d; }
   .footer_touch .form-header p {
     display: flex;
     flex-direction: row;
@@ -545,11 +551,6 @@ tr {
     .footer_touch .form-header p .label {
       background-color: #4d4d4d;
       align-items: center; }
-      .footer_touch .form-header p .label i {
-        padding-left: 1.5rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        color: #fff; }
     .footer_touch .form-header p .turnintodropdown {
       width: 100%;
       border: none;
@@ -563,18 +564,46 @@ tr {
         outline: none;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem; }
-
-.form-calendar {
-  margin-top: 2.1875rem; }
-  .form-calendar .form-control {
-    width: 95%;
-    border: none;
-    background-color: #4d4d4d;
+  .footer_touch .form-header .form-calendar {
+    display: flex;
+    flex-direction: row;
     color: #fff;
-    padding-left: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    outline: none; }
+    margin-top: 1rem; }
+    .footer_touch .form-header .form-calendar .form-control {
+      width: 95%;
+      border: none;
+      background-color: #4d4d4d;
+      color: #fff;
+      padding-left: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      outline: none; }
+  .footer_touch .form-header .form-message {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem; }
+    .footer_touch .form-header .form-message textarea {
+      background-color: #4d4d4d;
+      color: #fff;
+      max-width: 87%;
+      min-width: 87%;
+      min-height: 4rem;
+      max-height: 8rem;
+      border: none;
+      padding-left: 1.5rem;
+      padding-top: 1rem; }
+  .footer_touch .form-header .submit {
+    margin-top: 1.1rem;
+    border: 2px solid #ff8820;
+    color: #fff;
+    background-color: #ff8820;
+    height: 4rem;
+    width: 12rem;
+    font-size: 1.125rem;
+    transition: all 0.8s ease; }
+    .footer_touch .form-header .submit:hover {
+      color: #ff8820;
+      background-color: #000; }
 
 @font-face {
   font-family: "Lato";

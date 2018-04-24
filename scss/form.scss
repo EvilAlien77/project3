@@ -1,6 +1,13 @@
 .footer_touch {
   width: 41.66667%;
   .form-header {
+    i {
+      padding-left: $fz * 1.5;
+      padding-top: $fz * 1;
+      padding-bottom: $fz * 1;
+      color: $white;
+      background-color: $icons;
+    }
     p {
       display: flex;
       flex-direction: row;
@@ -8,12 +15,7 @@
       .label {
         background-color: $icons;
         align-items: center;
-        i {
-          padding-left: $fz * 1.5;
-          padding-top: $fz * 1;
-          padding-bottom: $fz * 1;
-          color: $white;
-        }
+
       }
 
       .turnintodropdown {
@@ -33,22 +35,56 @@
         }
       }
     }
+    .form-calendar {
+      display: flex;
+      flex-direction: row;
+      color: $white;
+      margin-top: $fz * 1;
+      .form-control {
+        width: 95%;
+        border: none;
+        background-color: $icons;
+        color: $white;
+        padding-left: $fz * 1.5;
+        padding-top: $fz * 1;
+        padding-bottom: $fz * 1;
+        outline: none;
+      }
+    }
+    .form-message {
+      display: flex;
+      flex-direction: row;
+      margin-top: $fz * 1;
+      textarea {
+        background-color: $icons;
+        color: $white;
+        max-width: 87%;
+        min-width: 87%;
+        min-height: $fz * 4;
+        max-height: $fz * 8;
+        border: none;
+        padding-left: $fz * 1.5;
+        padding-top: $fz * 1;
+      }
 
+    }
+    .submit {
+      margin-top: $fz * 1.1;
+      border: 2px solid $orange;
+      color: $white;
+      background-color: $orange;
+      height: $fz * 4;
+      width: $fz * 12;
+      font-size: $fz * 1.125;
+      transition: all 0.8s ease;
+      &:hover {
+        color: $orange;
+        background-color: $black;
+      }
+    }
   }
 
 }
-.form-calendar {
 
-  margin-top: $fz * 2.1875;
-  .form-control {
-    width: 95%;
-    border: none;
-    background-color: $icons;
-    color: $white;
-    padding-left: $fz * 1.5;
-    padding-top: $fz * 1;
-    padding-bottom: $fz * 1;
-    outline: none;
-  }
-}
+
 

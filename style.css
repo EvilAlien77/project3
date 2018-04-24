@@ -55,15 +55,13 @@
 a {
   text-decoration: none;
   font-size: 1.1rem;
-  color: #000; }
+  color: #000;
+  transition: all 0.8s ease; }
 
 .phone {
   max-width: 1.2rem;
   padding-right: 0.625rem; }
 
-/* .center {
-	font-size: $fz * 3;
-} */
 .button {
   color: #ff8820;
   letter-spacing: 0.05rem;
@@ -72,14 +70,13 @@ a {
 
 .right-side {
   border: 3px solid #f2f3f8;
-  padding: 0.625rem 1.875rem; }
+  padding: 0.625rem 1.875rem;
+  transition: all 0.8s ease; }
 
 .tel:hover {
-  transition: all 0.8s ease;
   color: #ff8820; }
 
 .right-side:hover {
-  transition: all 0.8s ease;
   background: #ff8820;
   border-color: #ff8820; }
   .right-side:hover .button {
@@ -250,7 +247,6 @@ a {
   margin-top: 2.5rem; }
 
 .button2:hover {
-  transition: all 0.8s ease;
   background: #ff8820;
   border-color: #ff8820;
   color: #fff; }
@@ -463,15 +459,14 @@ tr {
   padding-bottom: 6.875rem; }
   .foter_section_1 .section_shell {
     margin: 0 auto;
-    max-width: 75rem; }
+    max-width: 75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
     .foter_section_1 .section_shell ul {
       list-style: none;
       padding: 0;
       margin: 0; }
-    .foter_section_1 .section_shell i {
-      color: #4d4d4d;
-      font-size: 2.75rem;
-      line-height: 1.3; }
     .foter_section_1 .section_shell h3 {
       color: #fff;
       font-size: 1.875rem; }
@@ -483,35 +478,103 @@ tr {
         color: #ff8820; }
     .foter_section_1 .section_shell .footer_contact {
       max-width: 25%; }
-      .foter_section_1 .section_shell .footer_contact .contact-list li:before {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        bottom: 100%;
-        left: 0;
-        right: 0;
-        max-width: 200px;
-        border-top: 1px solid #fff; }
-      .foter_section_1 .section_shell .footer_contact .contact-list .units {
+      .foter_section_1 .section_shell .footer_contact .contact-list {
+        /*li:before {
+           content: "";
+           display: inline-block;
+           position: absolute;
+           bottom: 100%;
+           left: 0;
+           right: 0;
+           max-width: $fz * 12.5;
+           border-top: 1px solid $white;
+         }*/ }
+        .foter_section_1 .section_shell .footer_contact .contact-list i {
+          color: #4d4d4d;
+          font-size: 2.75rem;
+          line-height: 1.3; }
+        .foter_section_1 .section_shell .footer_contact .contact-list a {
+          font-size: 0.9rem; }
+        .foter_section_1 .section_shell .footer_contact .contact-list .units {
+          display: flex;
+          flex-direction: row;
+          margin-top: 2.1875rem; }
+          .foter_section_1 .section_shell .footer_contact .contact-list .units .unit-body {
+            padding-left: 0.9375rem; }
+            .foter_section_1 .section_shell .footer_contact .contact-list .units .unit-body .list-desc {
+              display: flex;
+              flex-direction: row;
+              margin-left: -0.3125rem;
+              margin-right: -0.3125rem; }
+              .foter_section_1 .section_shell .footer_contact .contact-list .units .unit-body .list-desc dt {
+                color: #ff8820; }
+            .foter_section_1 .section_shell .footer_contact .contact-list .units .unit-body .list-desc > * {
+              display: flex;
+              flex-direction: row;
+              padding-left: 0.3125rem;
+              padding-right: 0.3125rem;
+              font-weight: 400;
+              color: #fff;
+              font-size: 0.9rem; }
+    .foter_section_1 .section_shell .footer_posts {
+      max-width: 33.33333%; }
+      .foter_section_1 .section_shell .footer_posts .posts-list i {
+        color: #fff;
+        font-size: 0.9rem; }
+      .foter_section_1 .section_shell .footer_posts .posts-list .units {
         display: flex;
         flex-direction: row;
         margin-top: 2.1875rem; }
-        .foter_section_1 .section_shell .footer_contact .contact-list .units .unit-body {
+        .foter_section_1 .section_shell .footer_posts .posts-list .units .unit-body {
           padding-left: 0.9375rem; }
-          .foter_section_1 .section_shell .footer_contact .contact-list .units .unit-body .list-desc {
+          .foter_section_1 .section_shell .footer_posts .posts-list .units .unit-body .time {
             display: flex;
-            flex-direction: row;
-            margin-left: -5px;
-            margin-right: -5px; }
-            .foter_section_1 .section_shell .footer_contact .contact-list .units .unit-body .list-desc dt {
-              color: #ff8820; }
-          .foter_section_1 .section_shell .footer_contact .contact-list .units .unit-body .list-desc > * {
-            display: flex;
-            flex-direction: row;
-            padding-left: 5px;
-            padding-right: 5px;
-            font-weight: 400;
-            color: #fff; }
+            flex-direction: row; }
+            .foter_section_1 .section_shell .footer_posts .posts-list .units .unit-body .time .time_body {
+              padding-left: 0.5rem;
+              color: #ff8820;
+              font-style: italic;
+              font-size: 0.9rem; }
+
+.footer_touch {
+  width: 41.66667%; }
+  .footer_touch .form-header p {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.1875rem; }
+    .footer_touch .form-header p .label {
+      background-color: #4d4d4d;
+      align-items: center; }
+      .footer_touch .form-header p .label i {
+        padding-left: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: #fff; }
+    .footer_touch .form-header p .turnintodropdown {
+      width: 100%;
+      border: none;
+      background-color: #4d4d4d;
+      color: #fff;
+      padding-left: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      outline: none; }
+      .footer_touch .form-header p .turnintodropdown option {
+        outline: none;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem; }
+
+.form-calendar {
+  margin-top: 2.1875rem; }
+  .form-calendar .form-control {
+    width: 95%;
+    border: none;
+    background-color: #4d4d4d;
+    color: #fff;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    outline: none; }
 
 @font-face {
   font-family: "Lato";

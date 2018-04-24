@@ -6,15 +6,13 @@
   .section_shell {
     margin: 0 auto;
     max-width: $fz * 75;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
-    }
-    i {
-      color: $icons;
-      font-size: $fz * 2.75;
-      line-height: 1.3;
     }
     h3 {
       color: $white;
@@ -31,16 +29,24 @@
     .footer_contact {
       max-width: 25%;
        .contact-list {
-         li:before {
+         i {
+           color: $icons;
+           font-size: $fz * 2.75;
+           line-height: 1.3;
+         }
+         a {
+           font-size: $fz * 0.9;
+         }
+         /*li:before {
            content: "";
            display: inline-block;
            position: absolute;
            bottom: 100%;
            left: 0;
            right: 0;
-           max-width: 200px;
+           max-width: $fz * 12.5;
            border-top: 1px solid $white;
-         }
+         }*/
          .units {
            display: flex;
            flex-direction: row;
@@ -50,8 +56,8 @@
              .list-desc {
                display: flex;
                flex-direction: row;
-               margin-left: -5px;
-               margin-right: -5px;
+               margin-left: $fz * -0.3125;
+               margin-right: $fz * -0.3125;
                dt {
                  color: $orange;
                }
@@ -59,14 +65,42 @@
              .list-desc > * {
                display: flex;
                flex-direction: row;
-               padding-left: 5px;
-               padding-right: 5px;
+               padding-left: $fz * 0.3125;
+               padding-right: $fz * 0.3125;;
                font-weight: 400;
                color: $white;
+               font-size: $fz * 0.9;
              }
            }
          }
        }
+    }
+    .footer_posts {
+      max-width: 33.33333%;
+      .posts-list {
+        i {
+          color: $white;
+          font-size: $fz * 0.9;
+        }
+        .units {
+          display: flex;
+          flex-direction: row;
+          margin-top: $fz * 2.1875;
+          .unit-body {
+            padding-left: $fz * 0.9375;
+            .time {
+              display: flex;
+              flex-direction: row;
+              .time_body {
+                padding-left: $fz * 0.5;
+                color: $orange;
+                font-style: italic;
+                font-size: $fz * 0.9;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

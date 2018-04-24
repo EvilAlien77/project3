@@ -13,31 +13,29 @@ a {
 	text-decoration: none;
 	font-size: $fz * 1.1;
 	color: $black;
+	transition: all 0.8s ease;
 }
 .phone {
 	max-width: $fz + 0.2;
 	padding-right: $fz - 0.375;
 }
-/* .center {
-	font-size: $fz * 3;
-} */
 .button {
 	color: $orange;
     letter-spacing: $fz - 0.95;
     font-weight: 900;
     font-size: $fz * 1.2;
+
 }
 
 .right-side {
 	border: 3px solid $grey;
 	padding: $fz - 0.375 $fz + 0.875;
+	transition: all 0.8s ease;
 }
 .tel:hover {
-	transition: all 0.8s ease;
     color: $orange;
 }
 .right-side:hover {
-	transition: all 0.8s ease;
 	background: $orange;
 	border-color: $orange;
 	.button {

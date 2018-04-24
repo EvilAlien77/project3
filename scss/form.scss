@@ -1,0 +1,54 @@
+.footer_touch {
+  width: 41.66667%;
+  .form-header {
+    p {
+      display: flex;
+      flex-direction: row;
+      margin-top: $fz * 2.1875;
+      .label {
+        background-color: $icons;
+        align-items: center;
+        i {
+          padding-left: $fz * 1.5;
+          padding-top: $fz * 1;
+          padding-bottom: $fz * 1;
+          color: $white;
+        }
+      }
+
+      .turnintodropdown {
+        width: 100%;
+        border: none;
+        background-color: $icons;
+        color: $white;
+        padding-left: $fz * 1.5;
+        padding-top: $fz * 1;
+        padding-bottom: $fz * 1;
+        outline: none;
+        option  {
+          outline: none;
+          padding-top: $fz * 1.5;
+          padding-bottom: $fz * 1.5;
+
+        }
+      }
+    }
+
+  }
+
+}
+.form-calendar {
+
+  margin-top: $fz * 2.1875;
+  .form-control {
+    width: 95%;
+    border: none;
+    background-color: $icons;
+    color: $white;
+    padding-left: $fz * 1.5;
+    padding-top: $fz * 1;
+    padding-bottom: $fz * 1;
+    outline: none;
+  }
+}
+

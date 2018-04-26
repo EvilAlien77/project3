@@ -8,6 +8,9 @@
 	height: $fz + 5.50;
 	padding-left: $fz + 1.5;
 	padding-right: $fz + 1.5;
+	i {
+		display: none;
+	}
 }
 a {
 	text-decoration: none;
@@ -41,4 +44,42 @@ a {
 	.button {
 	color: $white;
    }
+}
+@media (max-width: 1200px) {
+	.wrapper {
+		.header {
+
+			position: sticky;
+			z-index: 20;
+			top: 0;
+			.head {
+				height: $fz * 3.4375;
+				padding: 0;
+				padding-left: 2%;
+				padding-right: 2%;
+				.phone , .tel , .button {
+					display: none;
+				}
+				.right-side {
+					border: none;
+					padding: 0;
+
+				}
+				i {
+					display: inherit;
+				}
+				.center-side {
+					img {
+						padding-top: 5%;
+					}
+				}
+			}
+		}
+
+		.home {
+			display: none;
+			position: inherit;
+		}
+	}
+
 }

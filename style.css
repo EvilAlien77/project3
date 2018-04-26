@@ -51,6 +51,8 @@
   height: 6.5rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem; }
+  .head i {
+    display: none; }
 
 a {
   text-decoration: none;
@@ -81,6 +83,29 @@ a {
   border-color: #ff8820; }
   .right-side:hover .button {
     color: #fff; }
+
+@media (max-width: 1200px) {
+  .wrapper .header {
+    position: sticky;
+    z-index: 20;
+    top: 0; }
+    .wrapper .header .head {
+      height: 3.4375rem;
+      padding: 0;
+      padding-left: 2%;
+      padding-right: 2%; }
+      .wrapper .header .head .phone, .wrapper .header .head .tel, .wrapper .header .head .button {
+        display: none; }
+      .wrapper .header .head .right-side {
+        border: none;
+        padding: 0; }
+      .wrapper .header .head i {
+        display: inherit; }
+      .wrapper .header .head .center-side img {
+        padding-top: 5%; }
+  .wrapper .home {
+    display: none;
+    position: inherit; } }
 
 /* *********                            home                         ********** */
 .home {

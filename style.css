@@ -185,6 +185,7 @@ a {
 
 /* *********                            Content                        ********** */
 .content {
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -192,10 +193,15 @@ a {
   height: 48.75rem; }
 
 .content_left {
-  max-width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  margin: 0 auto;
+  max-width: 50%; }
+  .content_left .content_text {
+    margin-left: 30%;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left; }
 
 .content_right {
   width: 50%;
@@ -214,14 +220,6 @@ a {
 
 .Week {
   color: #ff8820; }
-
-.content_text {
-  margin-left: 30%;
-  max-width: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  text-align: left; }
 
 .content h1 {
   font-weight: 900;
@@ -276,7 +274,8 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 65%;
+  width: 70%;
+  height: 50%;
   padding-top: 2.5rem; }
   .blocks h2 {
     color: #ff8820; }
@@ -288,11 +287,11 @@ h1 {
 .blocks .block1, .block2, .block3 {
   border: solid 0.2rem #f2f3f8;
   width: 30%;
-  height: 23.7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  transition: all 0.5s ease; }
 
 .tables {
   padding-top: 1.2rem;
@@ -312,8 +311,7 @@ tr {
 .blocks > div:hover {
   color: #fff;
   background: #ff8820;
-  border-color: #ff8820;
-  transition: all 0.5s ease; }
+  border-color: #ff8820; }
   .blocks > div:hover h2 {
     color: #fff; }
   .blocks > div:hover h5 {
@@ -415,7 +413,7 @@ tr {
       .section .sl .sl_slide .sl_slide_1 {
         width: 34.6875rem; }
         .section .sl .sl_slide .sl_slide_1 .quote-box {
-          height: 14.6875rem;
+          height: 16.25rem;
           background-color: #fff;
           padding: 3.75rem 1.875rem 4.0625rem 4.0625rem;
           margin-right: 1.875rem;
@@ -540,6 +538,24 @@ tr {
               font-style: italic;
               font-size: 0.9rem; }
 
+.footer_2 {
+  margin: 0 auto;
+  height: 4.375rem;
+  background-color: #1b1b1b;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 3%; }
+  .footer_2 .end {
+    height: 40%;
+    width: 50px;
+    background-color: #ff8820;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+    .footer_2 .end a {
+      color: #fff; }
+
 .footer_touch {
   width: 41.66667%; }
   .footer_touch .form-header i {
@@ -589,8 +605,7 @@ tr {
     .footer_touch .form-header .form-message textarea {
       background-color: #4d4d4d;
       color: #fff;
-      max-width: 87%;
-      min-width: 87%;
+      width: 100%;
       min-height: 4rem;
       max-height: 8rem;
       border: none;

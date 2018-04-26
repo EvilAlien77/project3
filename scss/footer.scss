@@ -104,3 +104,23 @@
     }
   }
 }
+.footer_2 {
+  margin: 0 auto;
+  height: $fz * 4.375;
+  background-color: #1b1b1b;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 3%;
+  .end {
+    height: 40%;
+    width: 50px;
+    background-color: $orange;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    a {
+      color: $white;
+    }
+  }
+}

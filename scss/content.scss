@@ -1,6 +1,7 @@
 /* *********                            Content                        ********** */
 
 .content {
+	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
 	text-align: center;
@@ -9,10 +10,17 @@
 	
 }
 .content_left {
+	margin: 0 auto;
 	max-width: 50%;
-	display: flex;
-  align-items: center;
-  justify-content: center;
+
+	.content_text {
+		margin-left: 30%;
+		max-width: 60%;
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+		text-align: left;
+	}
 }
 .content_right {
 	 width: 50%;
@@ -35,14 +43,7 @@
 .Week {
 	color: $orange;
 }
-.content_text {
-  margin-left: 30%;
-  max-width: 60%;
-	display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  text-align: left;
-}
+
 .content h1{
 	font-weight: 900;
     letter-spacing: .025em;

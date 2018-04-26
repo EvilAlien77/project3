@@ -16,7 +16,8 @@ h1 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 65%;
+	width: 70%;
+	height: 50%;
 	padding-top: $fz * 2.5;
 	h2{
 	color: $orange;
@@ -30,11 +31,11 @@ h1 {
 .blocks .block1 ,.block2 ,.block3 {
 	border: solid $fz - 0.8 $grey;
 	width: 30%;
-	height: $fz * 23.7;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	transition: all 0.5s ease;
 }
 .tables {
 	padding-top: $fz + 0.2;
@@ -62,5 +63,5 @@ tr {
   h5{
 	color: $white;
   }
-	transition: all 0.5s ease;
+
 }

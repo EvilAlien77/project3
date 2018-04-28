@@ -7,3 +7,8 @@ $('.sl').slick({
 	fade:false,
 	pauseOnHover: false,
 });
+
+$('.side-icon').click(function () {
+	$('.home').toggle();
+
+});

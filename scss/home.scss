@@ -1,6 +1,6 @@
 /* *********                            home                         ********** */
 
-
+.wrapper {}
 .home {
 	height: $fz + 3.2;
 	background: $grey;
@@ -11,77 +11,65 @@
     display: flex;
     align-items: center;
     z-index: 20;
+	.side {
+		width: $fz * 50;
+		margin: 0 auto;
+
+		.dws_menu {
+			.a_fir {
+				color: $orange;
+			}
+			ul {
+				list-style: none;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				margin: 0 auto;
+				a {
+					font-size: $fz - 0.15;
+					padding: $fz $fz - 0.375 $fz $fz - 0.6875;
+					letter-spacing: $fz - 0.95;
+					display: block;
+					&:hover {
+						color: $orange;
+						.li_span1 {
+							color: $orange;
+						}
+					}
+				}
+				li ul {
+					position: absolute;
+					min-width: $fz * 9.375;
+					border-top: $fz + 0.875 solid transparent;
+					display: none;
+					align-items: inherit;
+					.li_span {
+						display: none;
+					}
+
+				}
+				.pod_menu:hover {
+					.sub_menu {
+						z-index: 3;
+						top: 0;
+						margin-top: $fz + 2.125;
+						transition: all 0.5s ease;
+						display: flex;
+						flex-direction: column;
+						/*li:hover {
+									.a_fir {
+										color: #0f9d58;
+									}
+						}*/
+					}
+				}
+			}
+		}
+
+	}
 }
 
- /*Внешний вид меню*/
-.menu a {
- 	background: $grey;
- 	color: $black;
- 	padding: $fz - 0.375;
- 	display: block;
- }
-.side {
-	width: $fz * 50;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	box-sizing: border-box;
-	
-}
-.dws_menu {
-	width: $fz * 50;
-}
-.dws_menu ul,
-.dws_menu ol{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.dws_menu > ul{
-	display: flex;
-	justify-content: space-around;
-}
-.dws_menu > ul li a{
-	color: $black;
-	display: block;
-	font-size: $fz - 0.15;
-	padding: $fz $fz - 0.375 $fz $fz - 0.6875;
-	text-decoration: none;
-	text-transform: uppercase;
-	transition: all 0.3s ease;
-	background: $grey;
-	letter-spacing: $fz - 0.95;
-}
-.dws_menu > ul li a:hover {
-	transition: all 0.3s ease;
-    color: $orange;
-    .li_span1 {
-	color: $orange;
-}
-}
-/*sub menu*/
-
-.dws_menu li ul{
-	position: absolute;
-	min-width: $fz * 9.375;
-    border-top: $fz + 0.875 solid transparent;
-    display: none;
-    //top: 10em;
-}
-.dws_menu > ul li .li_span {
-	display: none;
-}
-.pod_menu:hover > .sub_menu{
-
-    z-index: 3;
-    top: 0;
-    margin-top: $fz + 2.125;
-    transition: all 0.5s ease;
-    display: flex;
-	flex-direction: column;
-
-}
 .dws_menu li > ul li a{
 	padding: $fz - 0.375;
 	text-transform: none;

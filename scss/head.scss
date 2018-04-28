@@ -1,4 +1,7 @@
 /* *********                            head                            ********** */
+.header {
+	width: 100%;
+}
 .head {
 	background: $white;
 	display: flex;
@@ -6,13 +9,17 @@
 	justify-content: space-between;
 	align-items: center;
 	height: $fz + 5.50;
-	padding-left: $fz + 1.5;
-	padding-right: $fz + 1.5;
+	padding-left: 1%;
+	padding-right: 1%;
+	max-width: 100%;
+
+	/*.center-side{
+		img {
+			height: 80%;
+		}
+	}*/
 	.side-icon{
 		display: none;
-		padding: $fz * 1;
-		align-items: center;
-		justify-items: center;
 		i {
 			font-size: $fz * 1.8;
 			color: $darkgrey;
@@ -20,9 +27,6 @@
 	}
 	.side-icon2{
 		display: none;
-		padding: $fz * 1;
-		align-items: center;
-		justify-items: center;
 		i {
 			font-size: $fz * 1.8;
 		}
@@ -65,7 +69,6 @@ a {
 	.head {
 		margin: 0 auto;
 		height: $fz * 3.4375;
-		max-width: $fz * 58.75;
 		.center-side {
 			img {
 				padding-top: 5%;
@@ -103,7 +106,7 @@ a {
 
 		.home {
 			display: none;
-			width: $fz * 16.875;
+			//width: $fz * 16.875;
 			height: 100%;
 			//display: flex;
 			justify-content: flex-start;

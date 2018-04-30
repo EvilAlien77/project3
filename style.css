@@ -53,12 +53,7 @@
   height: 6.5rem;
   padding-left: 1%;
   padding-right: 1%;
-  max-width: 100%;
-  /*.center-side{
-		img {
-			height: 80%;
-		}
-	}*/ }
+  max-width: 100%; }
   .head .side-icon {
     display: none; }
     .head .side-icon i {
@@ -121,34 +116,46 @@ a {
       .wrapper .header .head .right-side {
         border: none;
         padding: 0; }
+        .wrapper .header .head .right-side:hover {
+          background: transparent;
+          border-color: transparent; }
       .wrapper .header .head .side-icon {
         display: inherit; }
       .wrapper .header .head .side-icon2 {
         display: inherit; }
   .wrapper .home {
-    display: none;
     height: 100%;
     justify-content: flex-start;
     align-items: flex-start;
     position: fixed;
-    margin-top: 3.4375rem;
-    background: #fff;
-    box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+    background: #fff; }
     .wrapper .home .side {
+      height: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      position: fixed;
+      margin-top: 3.4375rem;
+      background: #fff;
+      display: none;
       width: 16.875rem;
-      margin-top: 2%; }
+      box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
       .wrapper .home .side .dws_menu ul {
         display: flex;
         flex-direction: column;
         align-items: inherit; }
         .wrapper .home .side .dws_menu ul a {
           background: #fff;
-          box-shadow: none; }
+          box-shadow: none;
+          padding-left: 5%; }
           .wrapper .home .side .dws_menu ul a:hover {
             background: #ff8820;
             color: #fff; }
         .wrapper .home .side .dws_menu ul li {
           margin-top: 1%; }
+          .wrapper .home .side .dws_menu ul li .li_span1 {
+            padding-right: 10%;
+            color: #000;
+            transition: all 0.8s ease; }
           .wrapper .home .side .dws_menu ul li .a_fir {
             background: #ff8820;
             color: #fff; }
@@ -158,8 +165,37 @@ a {
             border-top: 0; }
             .wrapper .home .side .dws_menu ul li ul .a_far {
               padding-left: 10%; }
+        .wrapper .home .side .dws_menu ul .pod_menu .a_far:hover .li_span {
+          display: none;
+          padding-left: 0; }
+        .wrapper .home .side .dws_menu ul .pod_menu .pod-menu-1 {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 0.8s ease; }
+          .wrapper .home .side .dws_menu ul .pod_menu .pod-menu-1 a {
+            margin: 0; }
+          .wrapper .home .side .dws_menu ul .pod_menu .pod-menu-1 .li_span1 {
+            padding-right: 10%;
+            font-size: 1.2rem; }
+          .wrapper .home .side .dws_menu ul .pod_menu .pod-menu-1:hover {
+            background: #ff8820; }
+            .wrapper .home .side .dws_menu ul .pod_menu .pod-menu-1:hover a {
+              color: #fff;
+              background: #ff8820; }
+            .wrapper .home .side .dws_menu ul .pod_menu .pod-menu-1:hover .li_span1 {
+              color: #fff; }
+        .wrapper .home .side .dws_menu ul .pod_menu:hover .pod-menu-1 {
+          background: #ff8820; }
+          .wrapper .home .side .dws_menu ul .pod_menu:hover .pod-menu-1 a {
+            color: #fff;
+            background: #ff8820; }
+          .wrapper .home .side .dws_menu ul .pod_menu:hover .pod-menu-1 .li_span1 {
+            color: #fff; }
         .wrapper .home .side .dws_menu ul .pod_menu:hover .sub_menu {
-          margin-top: 0; } }
+          margin-top: 0;
+          display: none; } }
 
 /* *********                            home                         ********** */
 .home {
@@ -167,8 +203,6 @@ a {
   background: #f2f3f8;
   position: sticky;
   top: 0;
-  /*min-height: 2em;
-    margin: 0;*/
   display: flex;
   align-items: center;
   z-index: 20; }
@@ -191,8 +225,6 @@ a {
         display: block; }
         .home .side .dws_menu ul a:hover {
           color: #ff8820; }
-          .home .side .dws_menu ul a:hover .li_span1 {
-            color: #ff8820; }
       .home .side .dws_menu ul li ul {
         position: absolute;
         min-width: 9.375rem;
@@ -200,19 +232,51 @@ a {
         display: none;
         align-items: inherit; }
         .home .side .dws_menu ul li ul .li_span {
-          display: none; }
+          display: none;
+          transform: rotate(-90deg); }
+      .home .side .dws_menu ul .pod-menu-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; }
+      .home .side .dws_menu ul .pod_menu:hover .pod-menu-1 a {
+        color: #ff8820; }
+      .home .side .dws_menu ul .pod_menu:hover .pod-menu-1 .li_span1 {
+        color: #ff8820; }
       .home .side .dws_menu ul .pod_menu:hover .sub_menu {
         z-index: 3;
         top: 0;
         margin-top: 3.125rem;
         transition: all 0.5s ease;
         display: flex;
-        flex-direction: column;
-        /*li:hover {
-									.a_fir {
-										color: #0f9d58;
-									}
-						}*/ }
+        flex-direction: column; }
+  .home .side-2 {
+    display: none;
+    background: #fff;
+    width: 17.5rem;
+    position: fixed;
+    right: 4px;
+    top: 64px;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 22px -4px rgba(0, 0, 0, 0.17);
+    text-align: left;
+    font-size: 14px;
+    z-index: 999; }
+    .home .side-2 .side-2-bottom {
+      padding-top: 5%; }
+      .home .side-2 .side-2-bottom .button-12 {
+        color: #ff8820;
+        letter-spacing: 0.05rem;
+        font-weight: 900;
+        font-size: 1.2rem;
+        border: 3px solid #f2f3f8;
+        padding: 0.625rem 1.875rem;
+        transition: all 0.8s ease; }
+        .home .side-2 .side-2-bottom .button-12:hover {
+          border: 3px solid #ff8820;
+          color: #fff;
+          background: #ff8820; }
 
 .dws_menu li > ul li a {
   padding: 0.625rem;
@@ -229,15 +293,7 @@ a {
 
 .li_span1 {
   display: inline-block;
-  -ms-transform: rotate(90deg);
-  /* IE 9 */
-  -moz-transform: rotate(90deg);
-  /* Firefox */
-  -webkit-transform: rotate(90deg);
-  /* Safari and Chrome */
-  -o-transform: rotate(90deg);
-  /* Opera */
-  transform: rotate(90deg);
+  transform: rotate(0deg);
   color: #9b9b9b; }
 
 /* *********                            Content                        ********** */

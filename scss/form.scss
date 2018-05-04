@@ -72,8 +72,8 @@
       border: 2px solid $orange;
       color: $white;
       background-color: $orange;
-      height: $fz * 4;
-      width: $fz * 12;
+      //height: $fz * 4;
+      width: auto;
       font-size: $fz * 1.125;
       transition: all 0.8s ease;
       &:hover {

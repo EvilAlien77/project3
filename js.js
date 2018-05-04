@@ -8,7 +8,9 @@ $('.sl').slick({
 	dots:true,
 	fade:false,
 	pauseOnHover: false,
+
 });
+
 
 $('.side-icon').click(function () {
 	$('.side').toggle();

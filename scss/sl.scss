@@ -1,6 +1,7 @@
 
 .section {
   margin: 0 auto;
+  width: 100%;
   background: $white;
   background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/bg-02.png);
   background-repeat: space;
@@ -87,4 +88,12 @@
   }
 
 }
+@media (max-width: 1000px) {
+  .section {
+    h2 {
+      font-size: $fz * 1.5;
+    }
+  }
+}
+
 

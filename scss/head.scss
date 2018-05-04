@@ -31,6 +31,8 @@ a {
 	font-size: $fz * 1.1;
 	color: $black;
 	transition: all 0.8s ease;
+	border: none
+;
 }
 .phone {
 	max-width: $fz + 0.2;
@@ -150,6 +152,7 @@ a {
 								position: inherit;
 								display: none;
 								border-top: 0;
+								width: 100%;
 								.a_far {
 									padding-left: 10%;
 								}

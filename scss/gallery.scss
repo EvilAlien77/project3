@@ -1,66 +1,74 @@
 /* ````````````````````````````````````        Gallery           ``````````` */
 .gallery {
-	height: $fz * 36.3125;
 	background: $grey;
-}
-.gallery_block1 {
-	display: flex;
-	flex-direction: row;
-	height: $fz * 28.125;
-	padding-top: $fz * 3.75;
-}
-.gallery_block {
-	display: flex;
-	width: 33%;
-	height: 100%;
-	overflow: hidden;
+	.gallery_block1 {
+		display: flex;
+		flex-direction: row;
+		padding-top: $fz * 3.75;
+		.gallery_block {
+			width: 33%;
+			overflow: hidden;
+			.conteiner {
+				position: relative;
 
-}
+				img {
+					width: 100%;
+					transition: all 2s ease;
+				}
 
-.gallery_block2 {
-	text-align: center;
-	padding-top: $fz * 1.45;
-	font-size: $fz - 0.2;
-	font-weight: 900;
-	a{
-		color: $orange;
+				.test{
+					height: 0%;
+					opacity: 0;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					margin-right: -50%;
+					transform: translate(-50%, -50%);
+					transition: all 2s ease;
+					span {
+						color: $white;
+						font-size: $fz - 0.2;
+					}
+					i {
+						color: $white;
+					}
+				}
+				&:hover{
+					.test{
+						opacity: 1;
+					}
+					img {
+						transform: scale(1.2);
+					}
+				}
+			}
+
+		}
+	}
+	.gallery_block2 {
+		text-align: center;
+		padding-top: $fz * 1.45;
+		padding-bottom: $fz * 1.875;
 		font-size: $fz - 0.2;
-	}
-}
-.gallery_block img {
-	width: 100%;
-	height: 100%;
-	transition: all 2s ease;	
-}       
-.conteiner {
-	position: relative;
+		font-weight: 900;
+		a{
+			color: $orange;
+			font-size: $fz - 0.2;
 
-	.test{
-		opacity: 0;
-		position: absolute;
-		top: 50%;
-	    left: 50%;
-	    margin-right: -50%;
-	    transform: translate(-50%, -50%);
-	    transition: all 2s ease;
-	    span {
-	    	color: $white;
-	    	font-size: $fz - 0.2;
-	    }
-	    i {
-	    	color: $white;
-	    }
+		}
 	}
-	 &:hover{
-	 	.test{
-			/*display: flex;
-			flex-direction: row;*/
-   		 	opacity: 1;
-			/*background: rgba(0,0,0, 0.4);
-			padding: 100%;*/
-   		 }
-   		 img {
-           transform: scale(1.2);
-         }
-   	 }
 }
+
+@media (max-width: 1000px) {
+	.gallery {
+		.gallery_block1 {
+			flex-wrap: wrap;
+			.gallery_block {
+				width: 50%;
+
+			}
+		}
+	}
+}
+
+

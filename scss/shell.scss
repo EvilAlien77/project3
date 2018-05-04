@@ -6,28 +6,30 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	h1 {
+		font-size: $fz * 3.75;
+		font-weight: 900;
+		padding-top: $fz * 6.25;
+	}
+	.blocks {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 70%;
+		height: 50%;
+		padding-top: $fz * 2.5;
+		h2{
+			color: $orange;
+		}
+		h5{
+			font-family: arrial;
+			color: $grey;
+			font-size: $fz * 1.5;
+		}
+	}
 }
-h1 {
-	font-size: $fz +2.8;
-	font-weight: 900;
-	padding-top: $fz * 6.25;
-}
-.blocks {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 70%;
-	height: 50%;
-	padding-top: $fz * 2.5;
-	h2{
-	color: $orange;
-  }
-  h5{
-	font-family: arrial;
-	color: $grey;
-	font-size: $fz * 1.5;
-  }
-}
+
+
 .blocks .block1 ,.block2 ,.block3 {
 	border: solid $fz - 0.8 $grey;
 	width: 30%;
@@ -38,7 +40,7 @@ h1 {
 	transition: all 0.5s ease;
 }
 .tables {
-	padding-top: $fz + 0.2;
+	padding-top: $fz * 1.1875;
 	min-width: 80%;
 	
 }
@@ -46,8 +48,8 @@ table {
 	width: 100%;
 }
 td{
-	padding-top: $fz + 1;
-    font-size: $fz + 0.4;
+	padding-top: $fz * 2;
+    font-size: $fz * 1.375;
 }
 tr {
 	display: flex;
@@ -64,4 +66,37 @@ tr {
 	color: $white;
   }
 
+}
+
+@media (max-width: 1200px) {
+	.shell {
+		.blocks {
+			width: 80%;
+		}
+	}
+}
+@media (max-width: 1120px) {
+	.shell {
+		.blocks {
+			width: 90%;
+		}
+	}
+}
+@media (max-width: 1000px) {
+	.shell {
+		height: auto;
+		h1 {
+			font-size: $fz * 2;
+			padding-top: $fz * 4.25;
+		}
+		.blocks {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			.block1 ,.block2 ,.block3 {
+				width: $fz * 26.875;
+				margin-bottom: 5%;
+			}
+		}
+	}
 }

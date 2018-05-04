@@ -64,15 +64,12 @@
 }
 .content_right {
 	 width: 50%;
-	 //background-image: url(https://livedemo00.template-help.com/wt_prod-10985/images/bg-02.png);
 	  background-repeat: no-repeat;
 	  display: flex;
 	  align-items: center;
 
 	.content_img {
 		margin-left: 10%;
-		/*max-height: 100%;
-        max-width: 100%;*/
 		img {
 			height: 100%;
 			width: 100%;
@@ -118,9 +115,6 @@
 			max-width: 100%;
 			.content_text {
 				margin: $fz * 3.125 auto;
-				/*margin-left: 30%;
-				margin-top: 10%;
-				max-width: 100%;*/
 			}
 		}
 		.content_right {

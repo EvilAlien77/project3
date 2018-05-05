@@ -542,8 +542,10 @@ tr {
       width: 33%;
       overflow: hidden; }
       .gallery .gallery_block1 .gallery_block .conteiner {
-        position: relative; }
+        position: relative;
+        height: 430px; }
         .gallery .gallery_block1 .gallery_block .conteiner img {
+          height: 100%;
           width: 100%;
           transition: all 2s ease; }
         .gallery .gallery_block1 .gallery_block .conteiner .test1 {

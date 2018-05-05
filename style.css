@@ -289,9 +289,9 @@ a {
         position: absolute;
         width: 15rem;
         border-top: 1.875rem solid transparent;
-        display: none;
         align-items: inherit;
         top: 0;
+        height: 0;
         flex-direction: column;
         transition: all 0.8s ease; }
         .home .side .dws_menu ul li ul .li_span {

@@ -38,9 +38,10 @@
 					position: absolute;
 					width: $fz * 15;
 					border-top: $fz + 0.875 solid transparent;
-					display: none;
+					//display: none;
 					align-items: inherit;
 					top: 0;
+					height: 0;
 					flex-direction: column;
 					transition: all 0.8s ease;
 					.li_span {

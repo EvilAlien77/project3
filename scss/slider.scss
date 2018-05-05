@@ -5,49 +5,133 @@
 	flex-direction: row;
 	text-align: center;
 	color: $white;
-  height: $fz * 39.375;
-  overflow: hidden;
-}
-.text h1 {
-	font-size: $fz * 3;
+    height: $fz * 39.375;
+    overflow: hidden;
 
-}
-.slider p {
-	padding-top: $fz - 0.375;
-	font-size: $fz * 1.2;
-}
-.slider h5 {
-	color: $orange;
-	padding-top: $fz - 0.375;
-	font-size: $fz * 1.5;
-  font-family: arial;
-}
-.slider > div {
-  overflow: hidden;
-}
-.slider img {
-  transition: all 2s ease;
-}
-.slider > div:hover {
-   img {
-   
-   transform: scale(1.2);
-   }
+  .sl_11 {
+    overflow: hidden;
+    .slider_content {
+      position: relative;
+      img {
+        transition: all 2s ease;
+        &:hover {
+
+        }
+      }
+      .sl-box {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        transition: all 2s ease;
+        span {
+          border: 0.5px solid $darkgrey;
+          position: absolute;
+          visibility: hidden;
+        }
+        .span1 {
+          transition: width 0.5s ease;
+          margin-top: 5%;
+          left: 50%;
+          width: 20%;
+        }
+        .span2 {
+          transition: left 0.5s ease;
+          margin-top: 5%;
+          left: 30%;
+          width: 5%;
+        }
+        .span5 {
+          transition: width 0.5s ease;
+          top: 91%;
+          left: 50%;
+          width: 20%;
+        }
+        .span6 {
+          transition: left 0.5s ease;
+          top: 91%;
+          left: 30%;
+          width: 5%;
+        }
+
+        .span3 {
+          transition: height 0.5s ease;
+          top: 45%;
+          left: 95%;
+          height: 20%;
+        }
+        .span4 {
+          transition: height 0.5s ease;
+          top: 45%;
+          left: 5%;
+          height: 20%;
+        }
+        .span7 {
+          transition: margin-top 0.5s ease;
+          margin-top: 30%;
+          left: 95%;
+          height: 35%;
+        }
+        .span8 {
+          transition: margin-top 0.5s ease;
+          margin-top: 30%;
+          left: 5%;
+          height: 35%;
+        }
+
+
+        &:hover {
+          background-color: rgba(0,0,0, 0.3);
+          .span1 , .span5 {
+            visibility: inherit;
+            width: 45%;
+          }
+          .span2 , .span6 {
+            visibility: inherit;
+            left: 5%;
+            width: 45%;
+          }
+          .span3 , .span4 {
+            visibility: inherit;
+            height: 46%;
+          }
+          .span7 , .span8 {
+            visibility: inherit;
+            height: 45%;
+            margin-top: 5%;
+          }
+        }
+        .text{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%);
+          h1 {
+            font-size: $fz * 3;
+
+          }
+          p {
+            padding-top: $fz - 0.375;
+            font-size: $fz * 1.2;
+          }
+          h5 {
+            color: $orange;
+            padding-top: $fz - 0.375;
+            font-size: $fz * 1.5;
+            font-family: arial;
+          }
+
+        }
+
+      }
+
+      &:hover{
+        img {
+          transform: scale(1.2);
+        }
+
+      }
+    }
   }
-  .slider_content {
-  position: relative;
-
-  .text{
-    position: absolute;
-    top: 50%;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -50%);
-  }
-   &:hover{
-    .test{
-        opacity: 1;
-
-       }
-     }
 }

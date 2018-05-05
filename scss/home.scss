@@ -41,7 +41,6 @@
 					display: none;
 					align-items: inherit;
 					top: 0;
-					//margin-top: $fz + 2.125;
 					flex-direction: column;
 					transition: all 0.8s ease;
 					.li_span {
@@ -50,14 +49,11 @@
 
 					}
 					li {
-						//padding: $fz - 0.375;
-						//text-transform: none;
 						a {
 							padding-left: 10%;
 							background: $white;
 							box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 							&:hover {
-								//border-left: $fz - 0.8 solid transparent;
 								.li_span {
 									display: inline-block;
 								}
@@ -74,7 +70,7 @@
 						display: inline-block;
 						transform:rotate(0deg);
 						color: $darkgrey;
-
+						transition: all 0.8s ease;
 					}
 				}
 				.pod_menu:hover {
@@ -87,7 +83,6 @@
 						}
 					}
 					.sub_menu {
-						//z-index: 3;
 						top: 0;
 						margin-top: $fz + 2.125;
 						display: flex;

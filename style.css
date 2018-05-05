@@ -480,6 +480,14 @@ video {
       align-items: center;
       justify-content: center;
       transition: all 0.5s ease; }
+      .shell .blocks .block1:hover, .shell .blocks .block2:hover, .shell .blocks .block3:hover {
+        color: #fff;
+        background: #ff8820;
+        border-color: #ff8820; }
+        .shell .blocks .block1:hover h2, .shell .blocks .block2:hover h2, .shell .blocks .block3:hover h2 {
+          color: #fff; }
+        .shell .blocks .block1:hover h5, .shell .blocks .block2:hover h5, .shell .blocks .block3:hover h5 {
+          color: #fff; }
 
 .tables {
   padding-top: 1.1875rem;
@@ -495,15 +503,6 @@ td {
 tr {
   display: flex;
   justify-content: space-between; }
-
-.blocks > div:hover {
-  color: #fff;
-  background: #ff8820;
-  border-color: #ff8820; }
-  .blocks > div:hover h2 {
-    color: #fff; }
-  .blocks > div:hover h5 {
-    color: #fff; }
 
 @media (max-width: 1200px) {
   .shell .blocks {

@@ -10,8 +10,9 @@
 			overflow: hidden;
 			.conteiner {
 				position: relative;
-
+				height: 430px;
 				img {
+					height: 100%;
 					width: 100%;
 					transition: all 2s ease;
 				}
